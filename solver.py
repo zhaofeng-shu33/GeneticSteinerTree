@@ -397,7 +397,7 @@ class ShortestPathHeuristicPopulationGenerator(HeuristicPopulationGenerator):
                 
             new_g1 = self.shortest_path_heuristic(Graph(self.graph.V, new_edge_list))
             population.append(self.individual_from_graph(new_g1))
-        
+         
         return population 
     
 class ShortestSpanningTreeHeuristicPopulationGenerator(HeuristicPopulationGenerator):
@@ -736,7 +736,7 @@ class LocalSearchSolver(GenericSolver):
 
 if __name__ == '__main__':
         
-    adj_list, nodes, term_list = parse_stp_file(sys.argv[1])
+    adj_list, nodes, term_list = parse_stp_file('sets/B/b04.stp')
     
     g = Graph(nodes, adj_list)
     

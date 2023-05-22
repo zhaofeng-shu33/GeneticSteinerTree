@@ -4,6 +4,7 @@ Created on Fri May 18 11:14:07 2018
 
 @author: admin
 """
+import numpy
 
 def install_and_import(package):
     import importlib
